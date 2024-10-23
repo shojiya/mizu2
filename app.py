@@ -11,7 +11,7 @@ app.secret_key = os.urandom(24)
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 GOOGLE_CLIENT_ID = "218645882702-kg5mhngnh391rf3q5pm86843ntteqeip.apps.googleusercontent.com"
 GOOGLE_CLIENT_SECRET = "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"
-REDIRECT_URI = "https://mizu2-2.onrender.com"
+REDIRECT_URI = "https://mizu2-2.onrender.com/callback"
 
 flow = Flow.from_client_secrets_file(
     'client_secret.json',
