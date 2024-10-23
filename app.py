@@ -9,9 +9,9 @@ app.secret_key = os.urandom(24)
 
 # Google OAuth 2.0の設定
 os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
-GOOGLE_CLIENT_ID = "あなたのクライアントID"
-GOOGLE_CLIENT_SECRET = "あなたのクライアントシークレット"
-REDIRECT_URI = "http://localhost:5000/callback"
+GOOGLE_CLIENT_ID = "218645882702-kg5mhngnh391rf3q5pm86843ntteqeip.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET = "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"
+REDIRECT_URI = "https://shojimc.com/mizu2/templates/profile"
 
 flow = Flow.from_client_secrets_file(
     'client_secret.json',
