@@ -59,7 +59,7 @@ def profile():
         'email': session.get('email')
     }
 
-    return render_template('profile.html', user=user_info)
+    return render_template('https://shojimc.com/mizu2/templates/profile.html', user=user_info)
 
 @app.route('/logout')
 def logout():
