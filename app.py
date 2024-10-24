@@ -47,7 +47,7 @@ def callback():
     session['email'] = id_info.get("email")
     session['name'] = id_info.get("name")
 
-    return redirect('https://shojimc.com/mizu2/templates/profile.html?id='+session['google_id'])
+    return redirect('https://shojimc.com/mizu2/controller/?id='+session['google_id'])
 #   return redirect(url_for('https://shojimc.com/mizu2/templates/profile.html'))
 @app.route('/profile')
 def profile():
